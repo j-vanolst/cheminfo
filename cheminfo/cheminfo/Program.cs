@@ -35,8 +35,8 @@ namespace cheminfo
             SQLiteDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                int AtomicNumber;
-                string Name, Symbol, State;
+                double AtomicNumber, AtomicMass, MeltingPoint, BoilingPoint, Ionization, Radius, Density, YearDiscovered;
+                string Name, Symbol, Series, State;
 
                 //Converts database objects to usable formats (strings, ints)
                 AtomicNumber = Convert.ToInt32(reader["AtomicNumber"]);
@@ -50,16 +50,22 @@ namespace cheminfo
                 ElementStrings.Add(Symbol);
                 ElementStrings.Add(State);
 
-                List<int> ElementInts = new List<int>();
+                List<double> ElementNumbers = new List<double>();
                 ElementInts.Add(AtomicNumber);
 
                 Console.WriteLine(ElementStrings[0] + ElementStrings[1] + ElementStrings[2]);
-                Console.WriteLine(ElementInts[0]);
+                Console.WriteLine(ElementNumebers[0]);
+                
             }
         }
     }
     class Chemical
     {
+        double AtomicNumber, AtomicMass, MeltingPoint, BoilingPoint, Ionization, Radius, Density, YearDiscovered;
+        string Name, Symbol, Series, State;
+        public void SetAttributes()
+        {
 
+        }
     }
 }
