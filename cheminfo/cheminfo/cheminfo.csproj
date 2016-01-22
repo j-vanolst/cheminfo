@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DC1358FA-E8CD-4BDF-B5BC-39D76375FAFA}</ProjectGuid>
+    <ProjectGuid>{246F5B81-7AB1-47AD-8B41-EAF9C5CD0C7A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>cheminfo</RootNamespace>
@@ -36,7 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite">
-      <HintPath>..\..\..\..\..\Desktop\music for Mama\System.Data.SQLite_DLL\System.Data.SQLite.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\music for Mama\GettingStartedWithSQLitePart1\SQLiteSamples\SQLiteSamples\SQLite\System.Data.SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
