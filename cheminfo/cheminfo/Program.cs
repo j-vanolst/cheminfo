@@ -7,13 +7,13 @@ using System.Data.SQLite;
 
 namespace cheminfo
 {
-    class Program
+    public class Program
     {
         SQLiteConnection MainDatabase;
 
-        public static List<double> ElementNumbers = new List<double>();
-        public static List<string> ElementStrings = new List<string>();
-        public static List<string> ClassInstances = new List<string>();
+        public List<double> ElementNumbers = new List<double>();
+        public List<string> ElementStrings = new List<string>();
+        public List<string> ClassInstances = new List<string>();
 
         static void Main(string[] args)
         {
@@ -99,8 +99,12 @@ namespace cheminfo
     {
         double AtomicNumber, AtomicMass, MeltingPoint, BoilingPoint, Ionization, Radius, Density, YearDiscovered;
         string Name, Symbol, Series, State;
+
         public void SetAttributes()
         {
+            AtomicNumber = ElementNumbers[0];
+            AtomicMass = ElementNumbers[1];
+            //And so on...
         }
     }
 }
